@@ -65,7 +65,9 @@
                     Title="Select a package name">
             </Picker>-->
             <Picker x:Name="pickerPackageName" 
-                    Title="Select a package name"/>
+                    Title="Select a package name"
+                    TitleColor="DarkGray"
+                    TextColor="Black"/>
             
             <Button x:Name="btnExecPackage" Text="선택한 Package 실행 " TextTransform="None"/>
 
