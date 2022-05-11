@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppLoginFlow.LoginPage"
+             Title="Login"
+             Padding="15">
+    <ContentPage.ToolbarItems >
+        <ToolbarItem x:Name="btnSignUp" Text="Sign Up"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+    
+    <ContentPage.Content>
+        <StackLayout Padding="40" VerticalOptions="Center" 
+                     HorizontalOptions="FillAndExpand">
+
+            <Label Text="Username:"/>
+            <Entry x:Name="txtUserName" Text="bsbae" Placeholder="Username"   />
+            <Label Text="Password:"/>
+            <Entry x:Name="txtPassword" IsPassword="True" Text="1111" Placeholder="Password" />
+
+            <Button  x:Name="btnLogin"  VerticalOptions="Center" Text="Login" TextTransform="None" />
+            <Button  x:Name="btnExit"  VerticalOptions="Center" Text="Exit" TextTransform="None" />
+
+            <Label x:Name="lblMessage" Text="Message"/>
+            <Label x:Name="lblPackageName" Text="Message"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

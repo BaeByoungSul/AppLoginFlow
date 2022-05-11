@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sys="clr-namespace:System;assembly=netstandard"
+             x:Class="AppLoginFlow.MainPage"
+             Title="Main"
+             Padding="15">
+    <ContentPage.Resources>
+        <Style TargetType="Button" x:Key="NoDefaultCapsButton" >
+            <Setter Property="TextTransform" Value="None"/>
+        </Style>
+    </ContentPage.Resources>
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="btnLogout" Text="Logout" />
+    </ContentPage.ToolbarItems>
+
+    <Grid BackgroundColor="Beige"  >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*"  />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!--첫번째 행-->
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+               BackgroundColor="Black" TextColor="White"
+               Text="몇 가지 기능 만들어 보기" 
+               FontSize="Title"
+               HorizontalOptions="FillAndExpand"
+               HorizontalTextAlignment="Center"/>
+        <!--두번째 행-->
+        <Editor Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" 
+                x:Name="txtToDoList"
+                BackgroundColor="Coral"
+                IsReadOnly="True"
+            />
+        <!--<Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" 
+               BackgroundColor="Coral"
+               FontSize="16" Padding="30,5,30,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text="1. DB연동 Login화면"/>
+                        <Span Text="{x:Static sys:Environment.NewLine}"/>
+                        <Span Text="2. MyNote( SQLite ) &#xa;"/>
+                        <Span Text="2. Soap Interface 화면 &#xa;"/>
+                        <Span Text="2. 메모 화면 &#xa;"/>
+                        <Span Text="3. 위치 저장 및 표시 &#xa;"/>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>-->
+
+        <!--세번째 행-->
+        <StackLayout Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="Aqua" >
+            <Button x:Name="btnPage1" Text="Page1 화면으로 가기 " Style="{x:StaticResource NoDefaultCapsButton}"/>
+
+            <!--<Picker x:Name="pickerPackageName"
+                    Title="Select a package name">
+            </Picker>-->
+            <Picker x:Name="pickerPackageName" 
+                    Title="Select a package name"/>
+            
+            <Button x:Name="btnExecPackage" Text="선택한 Package 실행 " TextTransform="None"/>
+
+        </StackLayout>
+
+        <!--<Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"
+               Text=" (Row, Col) = (2, 0)"
+               VerticalOptions="FillAndExpand"/>-->
+
+        <Label x:Name="lblUserEmail"  HorizontalTextAlignment="Start" Grid.Row="3" Grid.Column="0"  />
+        <Label x:Name="lblLoginTime" HorizontalTextAlignment="End" Grid.Row="3" Grid.Column="1" />
+    </Grid>
+
+</ContentPage>
