@@ -10,7 +10,7 @@
 
 # MSSQL DB
 1. DB연결 시 949 오류  : https://codepulse.tistory.com/109
-  - Android 옵션 >> Additional supported encodings : CJK
+   - Android 옵션 >> Additional supported encodings : CJK
     
 # 참조 Url 
   - 계층적 탐색 : https://docs.microsoft.com/ko-kr/xamarin/xamarin-forms/app-fundamentals/navigation/hierarchical
