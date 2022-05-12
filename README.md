@@ -8,6 +8,10 @@
    - 개발 Page1으로 이동
    - 내가 개발한 MyNotes Apps실행 : Android Manifest에서 QUERY_ALL_PACKAGES 권한 추가해야함
 
+# MSSQL DB
+1. DB연결 시 949 오류  : https://codepulse.tistory.com/109
+  - Android 옵션 >> Additional supported encodings : CJK
+    
 # 참조 Url 
   - 계층적 탐색 : https://docs.microsoft.com/ko-kr/xamarin/xamarin-forms/app-fundamentals/navigation/hierarchical
 
