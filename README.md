@@ -1,7 +1,16 @@
-# 계층적 탐색
-  https://docs.microsoft.com/ko-kr/xamarin/xamarin-forms/app-fundamentals/navigation/hierarchical
-  
-# Page flow설명
-1. Login Page
-  . 성공 시 Main page로 이동
-  . 필요 시 Sign up page로 이동 
+#  설명
+1. 시작 Page : Login page \
+   - 성공 시 Main Page로 이동 
+   - 아이디가 없는 경우 Sign Up Page로 이동 \
+   - 필요 시 Apps 종료 \
+
+2. Main Page  \
+  -. 개발 Page1으로 이동  \
+  -. 내가 개발한 MyNotes Apps실행 : Android Manifest에서 QUERY_ALL_PACKAGES 권한 추가해야함  \
+
+# 참조 Url 
+  - 계층적 탐색 : https://docs.microsoft.com/ko-kr/xamarin/xamarin-forms/app-fundamentals/navigation/hierarchical
+
+# What is Flyout ?
+A flyout is the optional root menu for a Shell application, and is fully customizable.
+It's accessible through an icon or by swiping from the side of the screen
